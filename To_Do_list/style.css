@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+.container {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* background-image: url(./img/bgc1.jpg);
+    background-position: center;
+    background-size: cover; */
+    padding: 2vw;
+    background: linear-gradient(gray, white);
+}
+
+.ToDoConrainer {
+    margin: auto;
+    width: 50%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0;
+    border-radius: 5px;
+    background-color: rgba(207, 203, 203, 0.091);
+    backdrop-filter: blur(5px);
+    background-color: #fff;
+}
+
+.head h2 {
+    text-transform: uppercase;
+    color: blue;
+    font-size: 2vw;
+}
+
+.head h2 span {
+    color: rgb(192, 42, 42);
+    color: red;
+    font-size: 2.8vw;
+}
+
+.searchArea {
+    height: 2.5vw;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    margin-top: 1vw;
+}
+
+.searchArea input {
+    height: 100%;
+    width: 80%;
+    padding: 0 1vw;
+    font-size: 1.2vw;
+}
+
+.searchArea p {
+    background-color: royalblue;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchArea p img {
+    cursor: pointer;
+    transition: scale .5s;
+}
+
+.searchArea p img:active {
+    scale: 1.05;
+}
+
+#Result {
+    font-size: 1.8vw;
+    margin: 1vw 0;
+    color: rgb(22, 22, 253);
+}
+
+.ToDoBody {
+    width: 80%;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    border-radius: 5px;
+    padding: 2vw 0;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Child {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-bottom: 3px solid green;
+    padding: 5px;
+    background-color: rosybrown;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.text {
+    width: 85%;
+    padding: 0 5px;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text] {
+    height: 2.5vw;
+    background-color: transparent;
+    width: 85%;
+    padding: 0 5px;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.Child img {
+    margin: 5px;
+    cursor: pointer;
+    transition: scale .5s;
+}
+
+.Child img:active {
+    scale: 1.1;
+}
+
+@media (max-width:450px) {
+    .ToDoConrainer {
+        width: 100%;
+        border: none;
+    }
+
+    .head h2 {
+        font-size: 9vw;
+    }
+
+    .head h2 span {
+        font-size: 12vw;
+    }
+
+    .searchArea {
+        height: 10vw;
+        width: 80%;
+        border-color: rgba(0, 0, 0, 0.767);
+    }
+
+    .searchArea input {
+        color: black;
+        font-size: 4vw;
+    }
+
+    #Result {
+        /* margin-top: 3vw; */
+        font-size: 7vw;
+        margin: 2vw 0;
+    }
+
+    .ToDoBody {
+        width: 90%;
+        margin-top: 2vw;
+    }
+
+    .Child {
+        margin: 2vw 0;
+        width: 95%;
+    }
+
+    .text {
+        font-size: 4vw;
+        /* width: 70%; */
+    }
+
+}
+
+@media (min-width:450px) and (max-width:750px) {
+    .ToDoConrainer {
+        width: 80%;
+        /* border: none; */
+    }
+
+    .head h2 {
+        font-size: 7vw;
+    }
+
+    .head h2 span {
+        font-size: 10vw;
+    }
+
+    .searchArea {
+        height: 6vw;
+        width: 80%;
+        border-color: rgba(0, 0, 0, 0.767);
+    }
+
+    .searchArea input {
+        color: black;
+        font-size: 4vw;
+    }
+
+    #Result {
+        /* margin-top: 3vw; */
+        font-size: 5vw;
+        margin: 2vw 0;
+    }
+
+    .ToDoBody {
+        width: 90%;
+        margin-top: 2vw;
+    }
+
+    .Child {
+        margin: 2vw 0;
+        width: 95%;
+    }
+
+    .text {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width:750px) and (max-width:1150px) {
+    .ToDoConrainer {
+        width: 80%;
+    }
+
+    .head h2 {
+        font-size: 3vw;
+    }
+
+    .head h2 span {
+        font-size: 5vw;
+    }
+
+    .searchArea {
+        height: 4vw;
+    }
+
+    .text {
+        font-size: 1.5vw;
+    }
+}
